@@ -5,7 +5,7 @@
   </label>
 
   <ul class="results">
-    <Rentals::Filter @rentals={{@rentals}} @query={{this.query}} as |results|>
+    <Rentals::Filter @rentals={{@rentals}} @query={{this.querySearch}} as |results|>
       {{#each results as |rental|}}
         <li><Rental @rental={{rental}} /></li>
       {{/each}}
